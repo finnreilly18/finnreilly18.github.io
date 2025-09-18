@@ -9,12 +9,14 @@ html {
 Body{
     color:var(--text);
     Background: var(--background);
+    font-family: Italiana;
 }
 
 h1,
 h2,
 h3{
     color: var(--primary);
+    font-family: Blinker ;
 }
 
 p{
