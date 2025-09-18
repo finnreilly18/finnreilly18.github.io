@@ -1,6 +1,37 @@
-html {--text: #000000;
---background: #c4c4c4;
---primary: #931c1c;
---secondary: #f2f2f2;
---accent: #8d2a29;
-}`
+html {
+    --text: #000000;
+    --background: #fcf1da;
+    --primary: #931c1c;
+    --secondary: #ff9292;
+    --accent: #8d2a29;
+}
+
+Body{
+    color:var(--text);
+    Background: var(--background);
+}
+
+h1,
+h2,
+h3{
+    color: var(--primary);
+}
+
+p{
+    Backround:var(--accent);
+}
+
+li::marker {
+    color:var(--secondary);
+}
+
+img {
+    padding: 4px;
+    border: 4px solid var(--secondary);
+    border-radius: 16px;
+    Background: var(--primary)
+}
+
+Audio{
+    Background: var(--secondary);
+}
