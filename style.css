@@ -33,7 +33,12 @@ img {
     border-radius: 16px;
     Background: var(--primary)
 }
-
+.sports {
+    color:#ff00bf
+}
+.james {
+    color:rgb(255, 185, 35);
+}
 Audio{
     Background: var(--secondary);
 }
