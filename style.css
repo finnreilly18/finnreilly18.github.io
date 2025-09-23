@@ -34,10 +34,25 @@ img {
     Background: var(--primary)
 }
 .sports {
-    color:#ff00bf
+    color:#ff00bf;
+    font-size: large;
+    text-decoration: dotted underline;
 }
 .james {
     color:rgb(255, 185, 35);
+    font-weight: bold;
+}
+.music{
+    color:rgb(0, 138, 30);
+    font-style: italic;
+}
+.bird{
+    color: aquamarine;
+    text-decoration: black wavy overline;
+}
+.fish{
+    line-height: 0cqh;
+    text-decoration: underline;
 }
 Audio{
     Background: var(--secondary);
