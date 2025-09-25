@@ -63,6 +63,9 @@ h2{
     line-height: 0cqh;
     text-decoration: underline;
 }
+.pigeon{
+    text-decoration: underline;
+}
 Audio{
     padding: 3px;
     border-radius: 16px;
