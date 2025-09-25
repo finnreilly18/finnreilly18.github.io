@@ -60,7 +60,7 @@ h2{
     text-decoration: black wavy overline;
 }
 .fish{
-    line-height: 0cqh;
+    line-height: 2px;
     text-decoration: underline;
 }
 .pigeon{
@@ -71,6 +71,8 @@ Audio{
     border-radius: 16px;
     Background: rgb(255, 166, 0);
     margin: 1em;
-    border:1em ridge rgb(255, 187, 0)
+    border:1em ridge rgb(255, 187, 0);
+    width:250px;
+    height:50px;
 
 }
