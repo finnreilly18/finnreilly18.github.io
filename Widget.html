@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <h1>Josh Norman Mad Libs</h1>
 
@@ -13,32 +16,34 @@
         <p>Enter a noun: <input type="text" id="noun1"></p>
         <p>Enter a past tense verb: <input type="text" id="verb1"></p>
         <p>Enter a adjective: <input type="text" id="adjective1"></p>
-        <p>Enter another name:<input type ="text" id="name2"></p>
+        <p>Enter another name:<input type="text" id="name2"></p>
         <p>Enter a second adjective: <input type="text" id="adjective2"></p>
-        
+
     </div>
 
     <button id="generate-button">Generate Josh Norman</button>
-    <div id="madlib-story">
-    
+    <div id="story-output">
+
     </div>
-    
-    <a href="index.html"><h2>Home Page</h2></a>
-     <script 
-     src="script.js">
-     document.getElementById("generate-button").addEventListener
-     function generateStory() {
-        const name1 = document.getElementById("name1").value
-        const noun1 = document.getElementById("noun1").value
-        const verb1 = document.getElementById("verb1").value
-        const adjective1 = document.getElementById("adjective1").value
-        const name2 = document.getElementById("name2").value
-        const adjective2=document.getElementById("adjective2").value
 
-        const story ='One day out near josh norman we saw $(name1) holding his $(noun1) as he $(verb1) as hard as he could and then got super happy. He thought he was $(adjective1) untill he saw his friend $(name2) who was super $(adjective)';
+    <a href="index.html">
+        <h2>Home Page</h2>
+    </a>
+    <script>
+        document.getElementById("generate-button").addEventListener("click", generateStory);
+        function generateStory() {
+            const name1 = document.getElementById("name1").value
+            const noun1 = document.getElementById("noun1").value
+            const verb1 = document.getElementById("verb1").value
+            const adjective1 = document.getElementById("adjective1").value
+            const name2 = document.getElementById("name2").value
+            const adjective2 = document.getElementById("adjective2").value
+            const story = `One day out near josh norman we saw ${name1} holding his ${noun1} as he ${verb1} as hard as he could and then got super happy. He thought he was ${adjective1} untill he saw his friend ${name2} who was super ${adjective2}`;
 
-        document.getElementById("story-output").innerHTML =story;
-     }
-      </script> 
+            document.getElementById("story-output").textContent = story;
+        }
+
+    </script>
 </body>
+
 </html>

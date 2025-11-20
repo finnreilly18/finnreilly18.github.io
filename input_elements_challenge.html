@@ -82,24 +82,25 @@
 
         btnGreet.addEventListener("click", () => {
             let name = nameInput.value;
-            let age = ageInput.value;   
+            let age = ageInput.value;
             greetingOutput.textContent = "Hello" + name + ", you are " + age + " years old!";
             if (age < 13) {
                 greetingOutput.textContent = "You're just a kid "
             }
         });
 
-        
+
         const colorInput = document.getElementById("colorInput");
         const volumeInput = document.getElementById("volumeInput");
         const colorOutput = document.getElementById("colorOutput");
-        colorOutput.textContent= "Josh Norman."
+        colorOutput.textContent = "Josh Norman."
 
-        colorInput.addEventListener("input", () => {
-        let color = colorInput.value;
-        colorOutput.style.backgroundColor = color
-        });
-        
+        function updateColor() {
+            let color = colorInput.value;
+            colorOutput.style.backgroundColor = color
+        }
+        colorInput.addEventListener("input", updateColor);
+
         // --- PART 3 ---
         const subscribeBox = document.getElementById("subscribeBox");
         const btnSubmit = document.getElementById("btnSubmit");
