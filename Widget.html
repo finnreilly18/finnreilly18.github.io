@@ -26,11 +26,10 @@
 
     </div>
 
-    <a href="index.html">
-        <h2>Home Page</h2>
-    </a>
+
     <script>
         document.getElementById("generate-button").addEventListener("click", generateStory);
+        document.getElementById("adjective2").addEventListener("input", generateStory)
         function generateStory() {
             const name1 = document.getElementById("name1").value
             const noun1 = document.getElementById("noun1").value
@@ -38,12 +37,18 @@
             const adjective1 = document.getElementById("adjective1").value
             const name2 = document.getElementById("name2").value
             const adjective2 = document.getElementById("adjective2").value
+            
             const story = `One day out near josh norman we saw ${name1} holding his ${noun1} as he ${verb1} as hard as he could and then got super happy. He thought he was ${adjective1} untill he saw his friend ${name2} who was super ${adjective2}`;
 
             document.getElementById("story-output").textContent = story;
         }
 
     </script>
+
+    <a href="index.html">
+        <h2>Home Page</h2>
+    </a>
+    
 </body>
 
 </html>
