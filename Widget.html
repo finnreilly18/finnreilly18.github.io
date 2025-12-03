@@ -22,6 +22,7 @@
     </div>
 
     <button id="generate-button">Generate Josh Norman</button>
+    <button id="reset-adjectives">Reset Adjectives</button>
     <div id="story-output">
 
     </div>
@@ -41,6 +42,14 @@
             const story = `One day out near josh norman we saw ${name1} holding his ${noun1} as he ${verb1} as hard as he could and then got super happy. He thought he was ${adjective1} untill he saw his friend ${name2} who was super ${adjective2}`;
 
             document.getElementById("story-output").textContent = story;
+        }
+
+          document.getElementById("reset-adjectives").addEventListener("click", resetAdjectives);
+
+        function resetAdjectives() {
+            document.getElementById("adjective1").value = "";
+            document.getElementById("adjective2").value = "";
+            document.getElementById("story-output").textContent = "";
         }
 
     </script>
